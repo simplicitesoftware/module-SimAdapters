@@ -13,10 +13,8 @@
 
 Module containing some adapters to import data models
 
-1- QuickParamAdapter
+1- QuickParamAdapter & QuickListAdapter
 ---------------------
 
-A Google Sheet template for generating the CSV file in Google Docs is available here:
-
-https://docs.google.com/spreadsheets/d/1d6G3389Kz5TbOvZVWFE3EQXKz3pheNhuQwSHRHBkE3c
+A Google Sheet template for generating the CSV files in Google Docs is available here: https://docs.google.com/spreadsheets/d/1d6G3389Kz5TbOvZVWFE3EQXKz3pheNhuQwSHRHBkE3c
 

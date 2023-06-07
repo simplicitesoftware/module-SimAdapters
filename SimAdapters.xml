@@ -11,12 +11,10 @@
 		<mdl_type>X</mdl_type>
 		<mdl_comment><![CDATA[Module containing some adapters to import data models
 
-1- QuickParamAdapter
+1- QuickParamAdapter & QuickListAdapter
 ---------------------
 
-A Google Sheet template for generating the CSV file in Google Docs is available here:
-
-https://docs.google.com/spreadsheets/d/1d6G3389Kz5TbOvZVWFE3EQXKz3pheNhuQwSHRHBkE3c]]></mdl_comment>
+A Google Sheet template for generating the CSV files in Google Docs is available here: https://docs.google.com/spreadsheets/d/1d6G3389Kz5TbOvZVWFE3EQXKz3pheNhuQwSHRHBkE3c]]></mdl_comment>
 	</data>
 </object>
 <object>
@@ -70,6 +68,27 @@ https://docs.google.com/spreadsheets/d/1d6G3389Kz5TbOvZVWFE3EQXKz3pheNhuQwSHRHBk
 		<grt_function_id.fct_action_id.act_name/>
 		<grt_function_id.fct_function>L</grt_function_id.fct_function>
 		<grt_activ>1</grt_activ>
+		<row_module_id.mdl_name>SimAdapters</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>Resource</name>
+	<action>upsert</action>
+	<data>
+		<res_object>
+			<object>
+				<name>Disposition</name>
+				<data>
+					<dis_code>default</dis_code>
+				</data>
+			</object>
+		</res_object>
+		<res_type>IMG</res_type>
+		<res_lang>ANY</res_lang>
+		<res_code>appstore-image</res_code>
+		<res_cached>0</res_cached>
+		<res_file/>
+		<res_image>resources/Disposition/default/appstore-image.svg</res_image>
 		<row_module_id.mdl_name>SimAdapters</row_module_id.mdl_name>
 	</data>
 </object>
