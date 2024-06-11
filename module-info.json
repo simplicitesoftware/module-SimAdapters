@@ -1,9 +1,0 @@
-{
-    "date": "2023-06-07 14:05:36",
-    "name": "SimAdapters",
-    "format": "xml",
-    "files": ["SimAdapters.xml"],
-    "repository": {},
-    "version": "1.0",
-    "platform": "5.3.4"
-}
