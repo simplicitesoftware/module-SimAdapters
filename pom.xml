@@ -13,15 +13,15 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
   <description>Simplicite module: SimAdapters</description>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <simplicite.url>https://scadapt.demo.simplicite.io</simplicite.url>
-    <simplicite.version>5.3-SNAPSHOT</simplicite.version>
+    <simplicite.url>https://simadapters.sca.simplicite.io</simplicite.url>
+    <simplicite.version>6.1-SNAPSHOT</simplicite.version>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
     <sonar.projectKey>simplicite-modules-SimAdapters</sonar.projectKey>
     <sonar.projectName>SimAdapters</sonar.projectName>
     <sonar.projectVersion>1.0</sonar.projectVersion>
     <sonar.sources>src,resources</sonar.sources>
-    <sonar.exclusions>**.min.js,**.min.css</sonar.exclusions>
+    <sonar.exclusions>SimAdapters.xml,SimAdapters.json,SimAdapters-*.yml,configuration/**,**.min.js,**.min.css</sonar.exclusions>
     <sonar.coverage.exclusions>resources/**.js,src/**.java</sonar.coverage.exclusions>
   </properties>
   <packaging>jar</packaging>
@@ -79,12 +79,6 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
       <artifactId>simplicite-api</artifactId>
       <version>${simplicite.version}</version>
       <classifier>javadoc</classifier>
-    </dependency>
-    <dependency>
-      <groupId>com.simplicite</groupId>
-      <artifactId>simplicite-api</artifactId>
-      <version>${simplicite.version}</version>
-      <classifier>sources</classifier>
     </dependency>
   </dependencies>
 </project>
