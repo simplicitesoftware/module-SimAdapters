@@ -97,7 +97,7 @@ public class QuickParamAdapter extends CSVLineBasedAdapter {
 				ObjectDB obj = objectsMap.get(objectLogicalName);
 				
 				// TODO clean method...
-				EditTemplate editor = new EditTemplate(getGrant(), objectLogicalName, "ObjectInternal");
+				EditTemplate editor = new EditTemplate(getGrant(), objectLogicalName, "ObjectInternal", true);
 				editor.createTemplate(getGrant().simpleQuery("select row_id from m_template where tpl_name='Base'"), obj.getModuleId());
 			}
         }
