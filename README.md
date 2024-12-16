@@ -17,6 +17,7 @@ Module containing some adapters to import data models
 ---------------------
 
 This is an adapter for quickly configuring apps with Simplicité. The basic steps are:
+1. Create a module in Simplicité, so you can get started with a group, scope, etc (cf [tutorial](https://docs.simplicite.io/lesson/tutorial/configuration/module))
 1. get the template as:
     - a Google Sheet template (you must be connected with a google account) : [Google Drive](https://docs.google.com/spreadsheets/d/1d6G3389Kz5TbOvZVWFE3EQXKz3pheNhuQwSHRHBkE3c/copy)
     - an OpenDocument file (compatible with Excel) : [Get file](./attachements/Template_QuickParam.ods)
@@ -25,7 +26,7 @@ This is an adapter for quickly configuring apps with Simplicité. The basic step
 ![template](./attachements/template.png)
 
 3. export those two tabs as CSV
-4. in Simplicité, import this module through the App Store
+4. in Simplicité, import this module through the App Store (AppStore > Tools > SimAdapters)
 5. Go to "Shortcuts > XML Imports"
 
 ![imports](./attachements/imports.png)
