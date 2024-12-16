@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simplicite elements="9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<object>
+	<name>Module</name>
+	<action>upsert</action>
+	<data>
+		<mdl_name>SimAdapters</mdl_name>
+		<mdl_version>1.0</mdl_version>
+		<mdl_prefix>ada</mdl_prefix>
+		<mdl_url/>
+		<mdl_type>X</mdl_type>
+		<mdl_comment><![CDATA[Module containing some adapters to import data models
+
+1- QuickParamAdapter & QuickListAdapter
+---------------------
+
+A Google Sheet template for generating the CSV files in Google Docs is available here: https://docs.google.com/spreadsheets/d/1d6G3389Kz5TbOvZVWFE3EQXKz3pheNhuQwSHRHBkE3c]]></mdl_comment>
+	</data>
+</object>
+<object>
+	<name>Group</name>
+	<action>upsert</action>
+	<data>
+		<grp_name>ADA_ADMIN</grp_name>
+		<grp_comment/>
+		<grp_type>G</grp_type>
+		<grp_parent_id.grp_name/>
+		<grp_home_id.viw_name/>
+		<row_module_id.mdl_name>SimAdapters</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>Domain</name>
+	<action>upsert</action>
+	<data>
+		<obd_name>AdaDomain</obd_name>
+		<obd_comment/>
+		<obd_type>D</obd_type>
+		<obd_view_id.viw_name/>
+		<obd_nohome>1</obd_nohome>
+		<obd_icon>img/color/downloading</obd_icon>
+		<obd_order/>
+		<obd_domain_id.obd_name/>
+		<row_module_id.mdl_name>SimAdapters</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>Resource</name>
+	<action>upsert</action>
+	<data>
+		<res_object>
+			<object>
+				<name>Disposition</name>
+				<data>
+					<dis_code>default</dis_code>
+				</data>
+			</object>
+		</res_object>
+		<res_type>IMG</res_type>
+		<res_lang>ANY</res_lang>
+		<res_code>appstore-image</res_code>
+		<res_cached>0</res_cached>
+		<res_file/>
+		<res_image>resources/Disposition/default/appstore-image.svg</res_image>
+		<row_module_id.mdl_name>SimAdapters</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>Adapter</name>
+	<action>upsert</action>
+	<data>
+		<adp_name>QuickListAdapter</adp_name>
+		<adp_atomic>0</adp_atomic>
+		<adp_type>JAVA</adp_type>
+		<adp_script/>
+		<adp_class/>
+		<adp_script_id>src/com/simplicite/adapters/SimAdapters/QuickListAdapter.java</adp_script_id>
+		<row_module_id.mdl_name>SimAdapters</row_module_id.mdl_name>
+	</data>
+	<data>
+		<adp_name>QuickParamAdapter</adp_name>
+		<adp_atomic>0</adp_atomic>
+		<adp_type>JAVA</adp_type>
+		<adp_script/>
+		<adp_class/>
+		<adp_script_id>src/com/simplicite/adapters/SimAdapters/QuickParamAdapter.java</adp_script_id>
+		<row_module_id.mdl_name>SimAdapters</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>TranslateDomain</name>
+	<action>upsert</action>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Domain</name>
+				<data>
+					<obd_name>AdaDomain</obd_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Adapters</tsl_value>
+		<tsl_help/>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>SimAdapters</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Domain</name>
+				<data>
+					<obd_name>AdaDomain</obd_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Adapteurs</tsl_value>
+		<tsl_help/>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>SimAdapters</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>Permission</name>
+	<action>upsert</action>
+	<data>
+		<prm_group_id.grp_name>ADA_ADMIN</prm_group_id.grp_name>
+		<prm_object>
+			<object>
+				<name>Domain</name>
+				<data>
+					<obd_name>AdaDomain</obd_name>
+				</data>
+			</object>
+		</prm_object>
+		<prm_perm>1</prm_perm>
+		<prm_upd>0</prm_upd>
+		<prm_req>0</prm_req>
+		<prm_prop/>
+		<prm_value/>
+		<row_module_id.mdl_name>SimAdapters</row_module_id.mdl_name>
+	</data>
+</object>
+</simplicite>
