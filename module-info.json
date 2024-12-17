@@ -1,8 +1,8 @@
 {
-    "date": "2024-12-17 15:20:03",
+    "date": "2024-12-17 16:02:18",
     "name": "SimAdapters",
-    "format": "json",
-    "files": ["SimAdapters.json"],
+    "format": "xml",
+    "files": ["SimAdapters.xml"],
     "repository": {},
     "version": "1.1",
     "platform": "6.1.18"
