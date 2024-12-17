@@ -111,7 +111,7 @@ public class QuickListAdapter extends CSVLineBasedAdapter {
 		if(!exists){
 			item.getObject().setFieldValue("lov_list_id", listId);
 			item.getObject().setFieldValue("lov_code", values[COL_ITEMCODE]);
-			list.getObject().setFieldValue("row_module_id", ModuleDB.getModuleId(values[COL_MODULE]));
+			item.getObject().setFieldValue("row_module_id", ModuleDB.getModuleId(values[COL_MODULE]));
 		}
 		item.getObject().setFieldValue("lov_label", values[COL_ITEMDESCR]);
 		item.getObject().setFieldValue("lov_order_by", line);
