@@ -99,7 +99,7 @@ public class QuickListAdapter extends CSVLineBasedAdapter {
 	private String upsertList(String[] values) throws PlatformException{
 		boolean exists = list.getForUpsert(new JSONObject().put("lov_name", values[COL_LISTCODE]));
 		if(!exists){
-			list.getObject().setFieldValue("mdl_name", values[COL_MODULE]);
+			list.getObject().setFieldValue("row_module_id", ModuleDB.getModuleId(values[COL_MODULE]));
 			list.getObject().setFieldValue("lov_name", values[COL_LISTCODE]);
 			list.validateAndSave();
 		}
@@ -111,7 +111,7 @@ public class QuickListAdapter extends CSVLineBasedAdapter {
 		if(!exists){
 			item.getObject().setFieldValue("lov_list_id", listId);
 			item.getObject().setFieldValue("lov_code", values[COL_ITEMCODE]);
-			list.getObject().setFieldValue("mdl_name", values[COL_MODULE]);
+			list.getObject().setFieldValue("row_module_id", ModuleDB.getModuleId(values[COL_MODULE]));
 		}
 		item.getObject().setFieldValue("lov_label", values[COL_ITEMDESCR]);
 		item.getObject().setFieldValue("lov_order_by", line);
